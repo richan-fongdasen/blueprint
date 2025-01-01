@@ -7,14 +7,14 @@
 [![Coding Style](https://github.com/richan-fongdasen/blueprint/actions/workflows/coding-style.yml/badge.svg?branch=main)](https://github.com/richan-fongdasen/blueprint/actions/workflows/coding-style.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/richan-fongdasen/blueprint.svg?style=flat-square)](https://packagist.org/packages/richan-fongdasen/blueprint)
 
-This package is a Laravel package that provides a simple way to generate code from a blueprint file. The blueprint file is a simple text file that contains the definition of the code that you want to generate. The package will parse the blueprint file and generate the code based on the definition.
+This package is a Laravel package that provides a simple way to define blueprint file that contains the definition of the code that you want to generate.
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require richan-fongdasen/blueprint
+composer require --dev richan-fongdasen/blueprint
 ```
 
 ## Changelog
