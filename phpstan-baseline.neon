@@ -1,0 +1,8 @@
+parameters:
+    treatPhpDocTypesAsCertain: false
+    ignoreErrors:
+        - identifier: missingType.iterableValue
+        - identifier: missingType.generics
+        - '#Unsafe usage of new static\(\).#'
+#        - '#Dynamic call to static method *#'
+#        - identifier: arrayFilter.strict

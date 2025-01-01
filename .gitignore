@@ -3,6 +3,7 @@ composer.lock
 /vendor
 
 # Frontend Assets
+package-lock.json
 /node_modules
 
 # Logs
@@ -30,3 +31,4 @@ phpstan.neon
 testbench.yaml
 /docs
 /coverage
+*.swp

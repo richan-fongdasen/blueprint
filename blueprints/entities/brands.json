@@ -1,0 +1,46 @@
+{
+  "name": "Brand",
+  "attributes": [
+    {
+      "name": "name",
+      "type": "string",
+      "input": "text",
+      "format": [
+        "string"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "name": "brand_logo",
+      "type": "image",
+      "maxFileSize": 10240,
+      "resize": {
+        "width": 1440,
+        "height": 960,
+        "sharpen": 10,
+        "optimize": true
+      },
+      "conversions": [
+        {
+          "name": "thumbnail",
+          "width": 1024,
+          "height": 768,
+          "crop": true,
+          "sharpen": 10,
+          "optimize": true
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "name": "products",
+      "type": "hasMany",
+      "relatedEntity": "Product"
+    }
+  ],
+  "generates": [
+    "migration"
+  ]
+}

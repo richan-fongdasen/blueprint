@@ -1,0 +1,12 @@
+{
+  "name": "ErrorLevel",
+  "type": "int",
+  "cases": {
+    "DEBUG": 1,
+    "INFO": 2,
+    "WARNING": 4,
+    "ERROR": 8,
+    "CRITICAL": 16
+  },
+  "defaultCase": "DEBUG"
+}

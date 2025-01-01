@@ -1,0 +1,9 @@
+{
+  "name": "ActiveStatus",
+  "type": "string",
+  "cases": {
+    "ACTIVE": "Active",
+    "INACTIVE": "Inactive"
+  },
+  "defaultCase": "ACTIVE"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "PostImage",
+  "scopes": [
+    "pages",
+    "posts"
+  ],
+  "attributes": [
+    {
+      "name": "alternativeText",
+      "type": "string",
+      "input": "text",
+      "min": 3,
+      "max": 64,
+      "format": [
+        "string"
+      ],
+      "default": "The alternative text should describe the image if it cannot be displayed."
+    },
+    {
+      "name": "caption",
+      "type": "string",
+      "input": "text",
+      "min": 3,
+      "max": 64,
+      "format": [
+        "string"
+      ],
+      "default": "The caption should describe the image."
+    }
+  ],
+  "media": [
+    {
+      "name": "post_image",
+      "type": "image",
+      "maxFileSize": 10240,
+      "resize": {
+        "width": 1440,
+        "height": 960,
+        "sharpen": 10,
+        "optimize": true
+      },
+      "responsive": true,
+      "conversions": [
+        {
+          "name": "thumbnail",
+          "width": 640,
+          "height": 480,
+          "crop": true,
+          "sharpen": 10,
+          "optimize": true
+        }
+      ]
+    }
+  ]
+}
