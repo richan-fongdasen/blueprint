@@ -18,6 +18,12 @@ class ValidateBlueprintCommand extends Command implements ConsoleCommand
     {
         $path = $this->argument('path') ?? base_path('blueprints');
 
+        if (! is_string($path)) {
+            $this->error('The path argument must be a string.');
+
+            return self::FAILURE;
+        }
+
         Blueprint::load($path, $this);
 
         $this->comment('The blueprint files are valid.');
